@@ -44,39 +44,61 @@
     <main>
       <div class="container">
         <h1 class="my-3">Nuovo Libro</h1>
-        <div class="row">
-          <div class="col">
-            <label for="nameHelper">Nome Autore</label>
-            <input type="text" name="nameHelper" id="nameHelper" class="form-control" placeholder="Inserisci il nome dell'autore" aria-label="First name">
-          </div>
-          <div class="col">
-            <label for="lastNameHelper">Cognome Autore</label>
-            <input type="text" name="lastNameHelper" id="lastNameHelper" class="form-control" placeholder="Inserisci il cognome dell'autore" aria-label="First name">
-          </div>
-          <div class="col-12 my-3">
-            <label for="titleHelper">Titolo</label>
-            <input type="text" name="titleHelper" id="titleHelper" class="form-control" placeholder="Inserisci iltitolo del libro" aria-label="First name">
-            <smal class="mt-1 opacity-75">Titolo versione italiana</smal>
-          </div>
-          <div class="col-12 col-lg-4 my-3">
-            <label  for="inlineFormSelectPref">Genere</label>
-            <select class="form-select" id="inlineFormSelectPref">
-              <option selected>Scegli il genere</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col-12 col-lg-4 my-3">
-            <label for="yearHelper">Anno di Pubblicazione</label>
-            <input type="number" name="yearHelper" id="yearHelper" class="form-control" placeholder="Inserisci l'anno" aria-label="First name">
-          </div>
-          <div class="col-12 col-lg-4 my-3">
-            <label for="isbnHelper">ISBN#</label>
-            <input type="number" name="isbnHelper" id="isbnHelper" class="form-control" placeholder="Inserisci il codice ISBN#" aria-label="First name">
-          </div>
+        <form action="" method="GET">
 
-        </div>
+          <div class="row">
+            <div class="col">
+              <label for="nameHelper">Nome Autore</label>
+              <input type="text" name="nameHelper" id="nameHelper" class="form-control" placeholder="Inserisci il nome dell'autore" aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="lastNameHelper">Cognome Autore</label>
+              <input type="text" name="lastNameHelper" id="lastNameHelper" class="form-control" placeholder="Inserisci il cognome dell'autore" aria-label="First name">
+            </div>
+            <div class="col-12 my-3">
+              <label for="titleHelper">Titolo</label>
+              <input type="text" name="titleHelper" id="titleHelper" class="form-control" placeholder="Inserisci iltitolo del libro" aria-label="First name">
+              <smal class="mt-1 opacity-75">Titolo versione italiana</smal>
+            </div>
+            <div class="col-12 col-lg-4 my-3">
+              <label  for="inlineFormSelectPref">Genere</label>
+              <select class="form-select" id="inlineFormSelectPref">
+                <option selected>Scegli il genere</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4 my-3">
+              <label for="yearHelper">Anno di Pubblicazione</label>
+              <input type="number" name="yearHelper" id="yearHelper" class="form-control" placeholder="Inserisci l'anno" aria-label="First name">
+            </div>
+            <div class="col-12 col-lg-4 my-3">
+              <label for="isbnHelper">ISBN#</label>
+              <input type="number" name="isbnHelper" id="isbnHelper" class="form-control" placeholder="Inserisci il codice ISBN#" aria-label="First name">
+            </div>
+            <div class="col-12">
+              <hr>
+            </div>
+            <div class="col-12 my-3">
+              <label for="isbnHelper">Note</label>
+              <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" style="height: 100px;" name="noteHelper" id="noteHelper"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Disponibile anche in digitale
+                </label>
+              </div>
+            </div>
+            <div class="my-3">
+  
+              <button class="btn btn-primary" type="submit">Aggiungi Libro</button>
+            </div>
+  
+          </div>
+        </form>
       </div>
       
     </main>
